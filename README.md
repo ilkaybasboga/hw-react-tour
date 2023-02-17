@@ -1,4 +1,4 @@
-[CLİCK] ()
+[CLİCK] (https://hw-react-tour.netlify.app/)
 
 # HW-React-Tour
 
