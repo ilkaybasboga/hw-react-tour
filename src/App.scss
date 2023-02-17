@@ -1,0 +1,20 @@
+@import './scss/reset';
+@import './scss/variables';
+@import './scss/mixins';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Tourney:ital,wght@1,800&display=swap');
+
+body{
+   
+    height: 100vh;
+    background-color:$laciColor;
+    }
+
+ .section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+} 

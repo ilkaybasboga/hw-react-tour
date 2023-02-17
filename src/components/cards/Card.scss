@@ -1,0 +1,68 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.card {
+  width: 30%;
+  border: 0.3rem solid rgb(250, 251, 252);
+  margin: 1rem;
+  color: azure;
+  border-radius: 1rem;
+  background-color: $maviColor;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  &:hover .desc {
+    transform: translateY(0%);
+  }
+  .title {
+    font-family: "Orbitron", sans-serif;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: $laciColor;
+  }
+  img{
+    width: 90%;
+    height: 20rem;
+    border-radius: 40rem;
+    margin-bottom: 2rem;
+  }
+  .desc {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transform: translateY(100%);
+    transition: transform 0.7s ease-in-out;
+    z-index: 3;
+  }
+}
+
+@include media-xsm{
+  .card{
+     width: 80%;
+  }
+}
+@include media-sm{
+  .card{
+     width: 40%;
+  }
+}
+@include media-md{
+  .card{
+     width: 40%;
+  }
+}
+@include media-lg{
+  .card{
+     width: 33%;
+  }
+}
+@include media-lg{
+  .card{
+     width: 30%;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.header{
+    text-align: center;
+    color: bisque;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Tourney', cursive;
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+@include media-xsm{
+    .header{
+        margin-top: 10rem;
+        font-size: 1.2rem;
+    }
+}
+@include media-sm{
+    .header{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+}
+@include media-lg{
+    .header{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+}

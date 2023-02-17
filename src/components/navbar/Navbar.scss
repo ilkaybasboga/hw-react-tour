@@ -1,0 +1,38 @@
+@import "../../scss/variables";
+@import "../..//scss/mixins";
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $maviColor;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    a{
+         padding: 1rem;
+         text-decoration: none;
+         text-transform: uppercase;
+         color: $laciColor;
+         font-size: larger;
+         font-weight: 600;
+         &:hover{
+            background-color: $laciColor;
+            color: $maviColor;
+            cursor: pointer;
+            border-radius: 1rem 0;
+
+        }
+    }
+}
+
+@include media-xsm{
+    .navbar{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
